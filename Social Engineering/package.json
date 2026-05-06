@@ -1,0 +1,13 @@
+{
+  "name": "my-v0-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'no build script'"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

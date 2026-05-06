@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Démonstration URL Frauduleuse - Phishing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Partie 2 : L'importance de l'URL</h1>
+        <a href="index.html" class="back-link">← Retour à l'accueil</a>
+      </header>
+
+      <main>
+        <section class="email-example">
+          <h2>Exemple d'Email de Phishing</h2>
+          <div class="email-card">
+            <div class="email-header">
+              <p><strong>De:</strong> scolarite-ynov@serviceeducatif.com</p>
+              <p><strong>À:</strong> etudiant@ynov.com</p>
+              <p>
+                <strong>Objet:</strong> Rappel concernant le règlement de vos frais universitaires
+              </p>
+            </div>
+            <div class="email-body">
+              <p>Bonjour,</p>
+              <p>
+              Nos services ont constaté que le règlement de vos frais de scolarité pour l’année universitaire en cours n’a pas encore été enregistré.
+              </p>
+              <p>
+              Afin d’éviter toute interruption de vos accès numériques (espace étudiant, plateforme pédagogique, ressources en ligne), nous vous invitons à régulariser votre situation dans les plus bref délais.
+              </p>
+              <p>
+               Je vous invite à vous rendre sur votre extranet, dans l’onglet dossier apprenant, et à vérifier vos frais
+                via ce lien : 
+              </p>
+              <p style="text-align: center; margin: 20px 0;">
+  <a href="demo.html" style="color: #0066cc; text-decoration: underline;">https://ashamedly-nonreciprocating-allena.ngrok-free.dev/</a>
+</p>
+
+              </p>
+              <p>Cordialement,<br />Le Service Scolarité</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="analysis">
+          <h2> Analyse : Les Signaux d'Alerte</h2>
+          <div class="alert-list">
+            <div class="alert-item danger">
+              <h3>1- Adresse Email Suspecte</h3>
+              <p><strong>scolarite-ynov@serviceeducatif.com</strong></p>
+              <p>Le domaine est "serviceeducatif.com" et non "ynov.com"</p>
+              <p>Email légitime serait : scolarite@ynov.com</p>
+            </div>
+
+            <div class="alert-item danger">
+              <h3>2️- URL Frauduleuse (Typosquatting)</h3>
+              <p><strong>https://ssso.ynov.com/login</strong></p>
+              <p>
+                Remarquez les <strong>3 "s"</strong> au lieu de 2 (ssso au lieu
+                de sso)
+              </p>
+              <p>URL légitime : https://sso.ynov.com/login</p>
+            </div>
+
+            <div class="alert-item danger">
+              <h3>3️- Urgence Artificielle</h3>
+              <p>"Nous vous invitons à régulariser votre situation dans les plus bref délais .."</p>
+              <p>
+                Crée un sentiment de panique pour vous pousser à agir sans
+                réfléchir
+              </p>
+            </div>
+
+            <div class="alert-item danger">
+              <h3>4️- Formulation Vague</h3>
+              <p>"Nos services ont constaté..." sans détails précis</p>
+              <p>
+                Manque d'informations personnalisées (numéro étudiant, montant
+                exact, etc.)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="url-comparison">
+          <h2> Comparaison Visuelle</h2>
+          <div class="comparison-grid">
+            <div class="comparison-item fake">
+              <h3>URL FRAUDULEUSE</h3>
+              <div class="url-display danger">
+                <code>https://ssso.ynov.com/login</code>
+              </div>
+              <p class="url-note">Notez les 3 "s" (typosquatting)</p>
+            </div>
+
+            <div class="comparison-item real">
+              <h3>URL LÉGITIME</h3>
+              <div class="url-display safe">
+                <code>https://sso.ynov.com/login</code>
+              </div>
+              <p class="url-note">2 "s" seulement - le vrai site</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="protection-tips">
+          <h2>Comment Se Protéger</h2>
+          <div class="tips-list">
+            <div class="tip-item">
+              <h3>1. Vérifiez toujours l'URL complète</h3>
+              <p>
+                Regardez attentivement le nom de domaine avant le premier "/"
+              </p>
+            </div>
+            <div class="tip-item">
+              <h3>2. Vérifiez l'expéditeur de l'email</h3>
+              <p>
+                Assurez-vous que le domaine correspond à l'organisation légitime
+              </p>
+            </div>
+            <div class="tip-item">
+              <h3>3. Ne cliquez pas sur les liens suspects</h3>
+              <p>Tapez l'URL vous-même ou utilisez vos favoris</p>
+            </div>
+            <div class="tip-item">
+              <h3>4. Activez l'authentification à deux facteurs</h3>
+              <p>
+                Même si vos identifiants sont volés, votre compte reste protégé
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Projet éducatif</p>
+      </footer>
+    </div>
+  </body>
+</html>
